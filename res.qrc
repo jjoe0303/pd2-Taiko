@@ -5,5 +5,7 @@
         <file>drum3.png</file>
         <file>red.png</file>
         <file>startbg.png</file>
+        <file>finalbg.png</file>
+        <file>finalbg2.png</file>
     </qresource>
 </RCC>

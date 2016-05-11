@@ -19,7 +19,8 @@ SOURCES += main.cpp\
     red.cpp \
     game.cpp \
     mytimer.cpp \
-    score.cpp
+    score.cpp \
+    mainwindow2.cpp
 
 HEADERS  += mainwindow.h \
     blue.h \
@@ -27,9 +28,11 @@ HEADERS  += mainwindow.h \
     game.h \
     player.h \
     mytimer.h \
-    score.h
+    score.h \
+    mainwindow2.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    mainwindow2.ui
 
 RESOURCES += \
     res.qrc
