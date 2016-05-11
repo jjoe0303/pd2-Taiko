@@ -7,6 +7,7 @@
 #include <player.h>
 #include <score.h>
 #include <mytimer.h>
+#include <QMediaPlayer>
 
 class Game:public QGraphicsView{
     Q_OBJECT
@@ -16,6 +17,7 @@ public:
     Player * player;
     Score * score;
     Mytimer * mytimer;
+    QMediaPlayer * bgm;
 };
 
 #endif // GAME_H

@@ -4,6 +4,7 @@
 #include <mainwindow2.h>
 
 extern Game * game;
+
 Mytimer::Mytimer(QGraphicsItem *parent):QGraphicsTextItem(parent)
 {
     //initialize
@@ -26,7 +27,10 @@ int Mytimer::gettime()
 void Mytimer::decrease()
 {
     if(time == 0){
+
          game->close();
+         game->bgm->stop();
+         delete game;
          MainWindow2 * w2 = new MainWindow2();
          w2->setFixedSize(768,557);
          w2->show();

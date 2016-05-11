@@ -8,4 +8,7 @@
         <file>finalbg.png</file>
         <file>finalbg2.png</file>
     </qresource>
+    <qresource prefix="/sound">
+        <file>bgm.mp3</file>
+    </qresource>
 </RCC>

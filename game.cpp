@@ -31,4 +31,7 @@ Game::Game()
     mytimer = new Mytimer();
     scene->addItem(mytimer);
 
+    bgm = new QMediaPlayer();
+    bgm->setMedia(QUrl("qrc:/sound/bgm.mp3"));
+    bgm->play();
 }

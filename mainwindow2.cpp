@@ -27,6 +27,7 @@ extern Game * game;
 void MainWindow2::on_pushButton_clicked()
 {
     close();
+    delete ui;
     game = new Game();
     game->show();
 }
@@ -34,4 +35,5 @@ void MainWindow2::on_pushButton_clicked()
 void MainWindow2::on_pushButton_2_clicked()
 {
     close();
+    delete ui;
 }
