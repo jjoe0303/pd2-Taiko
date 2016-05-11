@@ -26,7 +26,7 @@ Game::Game()
 
     QTimer * timer = new QTimer();
     QObject::connect(timer,SIGNAL(timeout()),player,SLOT(spawn()));
-    timer->start(1200);
+    timer->start(660);
 
     mytimer = new Mytimer();
     scene->addItem(mytimer);

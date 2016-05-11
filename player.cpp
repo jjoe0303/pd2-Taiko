@@ -12,6 +12,13 @@ Player::Player()
 {
     setPixmap(QPixmap(":/image/drum3.png"));
     setPos(20,165);
+
+    redbgm = new QMediaPlayer();
+    redbgm->setMedia(QUrl("qrc:/sound/red.wav"));
+
+
+    bluebgm = new QMediaPlayer();
+    bluebgm->setMedia(QUrl("qrc:/sound/blue.wav"));
 }
 
 void Player::keyPressEvent(QKeyEvent *event)
@@ -44,6 +51,14 @@ void Player::keyPressEvent(QKeyEvent *event)
              if(typeid(*(colliding_Items[i])) == typeid(Red)){
                  //increase the score
                  game->score->increase();
+                 //add sound
+                 if(redbgm->state() == QMediaPlayer::PlayingState){
+                     redbgm->setPosition(0);
+                 }
+
+                 else if(redbgm->state() == QMediaPlayer::StoppedState){
+                     redbgm->play();
+                 }
                  //remove the note
                  scene()->removeItem(colliding_Items[i]);
                  //delete object on the heap
@@ -59,6 +74,14 @@ void Player::keyPressEvent(QKeyEvent *event)
               if(typeid(*(colliding_Items[i])) == typeid(Blue)){
                   //increase the score
                   game->score->increase();
+                  //add sound
+                  if(bluebgm->state() == QMediaPlayer::PlayingState){
+                      bluebgm->setPosition(0);
+                  }
+
+                  else if(bluebgm->state() == QMediaPlayer::StoppedState){
+                      bluebgm->play();
+                  }
                   //remove the note
                   scene()->removeItem(colliding_Items[i]);
                   //delete object on the heap

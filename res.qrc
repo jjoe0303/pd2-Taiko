@@ -10,5 +10,7 @@
     </qresource>
     <qresource prefix="/sound">
         <file>bgm.mp3</file>
+        <file>red.wav</file>
+        <file>blue.wav</file>
     </qresource>
 </RCC>
