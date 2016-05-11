@@ -14,10 +14,11 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+extern Game *game;
 void MainWindow::on_pushButton_clicked()
 {
     close();
-    Game * game = new Game();
+    game = new Game();
     game->show();
 }
 

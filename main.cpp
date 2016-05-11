@@ -21,6 +21,7 @@ int main(int argc, char *argv[])
    // w.setGeometry(wid.screen()->width()/2 - (screenW/2) , wid.screen()->height()/2 - (screenH/2) , screenW , screenH);
     w.setFixedSize(768,557);
     w.show();
+   // game = new Game();
     //w2.show();
    // game->show();
     return a.exec();

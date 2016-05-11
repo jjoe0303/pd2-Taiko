@@ -25,7 +25,7 @@ int Mytimer::gettime()
 
 void Mytimer::decrease()
 {
-     if(time == 0){
+    if(time == 0){
          game->close();
          MainWindow2 * w2 = new MainWindow2();
          w2->setFixedSize(768,557);
