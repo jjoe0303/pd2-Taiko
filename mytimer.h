@@ -3,6 +3,7 @@
 #include <QGraphicsTextItem>
 #include <QObject>
 #include <QTimer>
+#include <globals.h>
 
 class Mytimer:public QGraphicsTextItem{
     Q_OBJECT

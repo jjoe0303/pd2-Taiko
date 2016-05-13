@@ -8,7 +8,7 @@ extern Game * game;
 Mytimer::Mytimer(QGraphicsItem *parent):QGraphicsTextItem(parent)
 {
     //initialize
-    time = 30;
+    time = 10;
     setPos(615,40);
     setPlainText(QString("time:")+QString::number(time)); // set time 30
     setDefaultTextColor(Qt::red);
@@ -27,11 +27,12 @@ int Mytimer::gettime()
 void Mytimer::decrease()
 {
     if(time == 0){
-
+         grade = game->myscore->getScore();
          game->close();
          game->bgm->stop();
-         delete game;
+         //delete game;
          MainWindow2 * w2 = new MainWindow2();
+         delete game;
          w2->setFixedSize(768,557);
          w2->show();
      }

@@ -16,6 +16,12 @@ MainWindow2::MainWindow2(QWidget *parent) :
     QGraphicsView * view = new QGraphicsView(this);
     view->setScene(scene);
     this->setCentralWidget(view);*/
+    ui->label_2->setText("score:"+QString::number(grade));
+
+    QFont ft;
+    ft.setPointSize(32);
+    ui->label_2->setFont(ft);
+
 }
 
 MainWindow2::~MainWindow2()

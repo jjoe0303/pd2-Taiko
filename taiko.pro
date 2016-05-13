@@ -21,7 +21,8 @@ SOURCES += main.cpp\
     game.cpp \
     mytimer.cpp \
     score.cpp \
-    mainwindow2.cpp
+    mainwindow2.cpp \
+    globals.cpp
 
 HEADERS  += mainwindow.h \
     blue.h \
@@ -30,7 +31,8 @@ HEADERS  += mainwindow.h \
     player.h \
     mytimer.h \
     score.h \
-    mainwindow2.h
+    mainwindow2.h \
+    globals.h
 
 FORMS    += mainwindow.ui \
     mainwindow2.ui
