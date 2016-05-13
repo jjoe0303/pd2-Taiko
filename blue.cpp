@@ -8,7 +8,7 @@
 Blue::Blue()
 {
     setPos(800,192);
-    setPixmap(QPixmap(":/image/blue.png"));
+    setPixmap(QPixmap(":/image/Katsu2.png"));
     QTimer * timer = new QTimer();
     connect (timer,SIGNAL(timeout()),this,SLOT(move()));
     timer->start(100);

@@ -8,7 +8,7 @@ extern Game * game;
 Mytimer::Mytimer(QGraphicsItem *parent):QGraphicsTextItem(parent)
 {
     //initialize
-    time = 10;
+    time = 30;
     setPos(615,40);
     setPlainText(QString("time:")+QString::number(time)); // set time 30
     setDefaultTextColor(Qt::red);

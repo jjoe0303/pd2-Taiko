@@ -8,7 +8,7 @@
 Red::Red()
 {
     setPos(800,192);
-    setPixmap(QPixmap(":/image/red.png"));
+    setPixmap(QPixmap(":/image/Don2.png"));
     QTimer * timer = new QTimer();
     connect (timer,SIGNAL(timeout()),this,SLOT(move()));
     timer->start(100);
