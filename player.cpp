@@ -5,6 +5,7 @@
 #include <QList>
 #include <typeinfo>
 #include <game.h>
+#include <mytimer.h>
 
 extern Game * game;
 
@@ -50,7 +51,7 @@ void Player::keyPressEvent(QKeyEvent *event)
          for(int i = 0,n = colliding_Items.size();i<n;++i){
              if(typeid(*(colliding_Items[i])) == typeid(Red)){
                  //increase the score
-                 game->score->increase();
+                 game->myscore->increase();
                  //add sound
                  if(redbgm->state() == QMediaPlayer::PlayingState){
                      redbgm->setPosition(0);
@@ -73,7 +74,7 @@ void Player::keyPressEvent(QKeyEvent *event)
           for(int i = 0,n = colliding_Items.size();i<n;++i){
               if(typeid(*(colliding_Items[i])) == typeid(Blue)){
                   //increase the score
-                  game->score->increase();
+                  game->myscore->increase();
                   //add sound
                   if(bluebgm->state() == QMediaPlayer::PlayingState){
                       bluebgm->setPosition(0);
@@ -97,12 +98,17 @@ void Player::spawn()
     //to create an enemy
     int random_num = rand()%2;
     if (random_num == 0){
-    Blue *blue = new Blue();
-    scene()->addItem(blue);
+        int rand_num = rand()%3;
+        Blue *blue = new Blue();
+        scene()->addItem(blue);
+        game->timer->start(rand_num*200+660);
     }
 
     if (random_num == 1){
-    Red * red = new Red();
-    scene()->addItem(red);
+        int rand_num = rand()%3;
+        Red * red = new Red();
+        scene()->addItem(red);
+        game->timer->start(rand_num*200+660);
+
     }
 }

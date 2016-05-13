@@ -21,10 +21,10 @@ Game::Game()
     scene->setBackgroundBrush(QBrush(QPixmap(":/image/bgg6.png")));
 
     //create the score
-    score = new Score();
-    scene->addItem(score);
+    myscore = new Score();
+    scene->addItem(myscore);
 
-    QTimer * timer = new QTimer();
+    timer = new QTimer();
     QObject::connect(timer,SIGNAL(timeout()),player,SLOT(spawn()));
     timer->start(660);
 

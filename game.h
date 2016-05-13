@@ -15,7 +15,8 @@ public:
     Game();
     QGraphicsScene * scene;
     Player * player;
-    Score * score;
+    Score * myscore;
+    QTimer * timer;
     Mytimer * mytimer;
     QMediaPlayer * bgm;
 };

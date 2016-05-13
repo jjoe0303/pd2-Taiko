@@ -1,5 +1,5 @@
-#ifndef MYRECT_H
-#define MYRECT_H
+#ifndef PLAYER_H
+#define PLAYER_H
 #include <QGraphicsRectItem>
 #include <QKeyEvent>
 #include <QGraphicsScene>
@@ -20,4 +20,4 @@ public slots:
     void spawn();
 };
 
-#endif // MYRECT_H
+#endif // PLAYER_H
