@@ -18,7 +18,7 @@ Game::Game()
     setFixedSize(768,557);
 
     scene->setSceneRect(0,0,768,557);
-    scene->setBackgroundBrush(QBrush(QPixmap(":/image/bgg6.png")));
+    scene->setBackgroundBrush(QBrush(QPixmap(":/image/bgg8.png")));
 
     //create the score
     myscore = new Score();
