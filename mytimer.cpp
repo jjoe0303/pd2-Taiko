@@ -8,7 +8,7 @@ extern Game * game;
 Mytimer::Mytimer(QGraphicsItem *parent):QGraphicsTextItem(parent)
 {
     //initialize
-    time = 30;
+    time = 90;
     setPos(615,40);
     setPlainText(QString("time:")+QString::number(time)); // set time 30
     setDefaultTextColor(Qt::red);
@@ -32,7 +32,7 @@ void Mytimer::decrease()
          game->bgm->stop();
          //delete game;
          MainWindow2 * w2 = new MainWindow2();
-         delete game;
+         //delete game;
          w2->setFixedSize(768,557);
          w2->show();
      }

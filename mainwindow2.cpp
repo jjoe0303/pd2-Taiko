@@ -5,6 +5,8 @@
 #include <QGraphicsView>
 #include <game.h>
 
+extern  Game * game;
+
 MainWindow2::MainWindow2(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow2)
@@ -17,6 +19,8 @@ MainWindow2::MainWindow2(QWidget *parent) :
     view->setScene(scene);
     this->setCentralWidget(view);*/
     ui->label_2->setText("score:"+QString::number(grade));
+    grade = 0;
+    //delete game;
 
     QFont ft;
     ft.setPointSize(32);
