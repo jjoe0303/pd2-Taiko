@@ -1,11 +1,7 @@
 <RCC>
     <qresource prefix="/image">
-        <file>bgg6.png</file>
-        <file>blue.png</file>
         <file>drum3.png</file>
-        <file>red.png</file>
         <file>startbg.png</file>
-        <file>finalbg.png</file>
         <file>finalbg2.png</file>
         <file>Don2.png</file>
         <file>Katsu2.png</file>
