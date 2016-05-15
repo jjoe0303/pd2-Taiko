@@ -11,14 +11,16 @@ Red::Red()
     setPixmap(QPixmap(":/image/Don2.png"));
     QTimer * timer = new QTimer();
     connect (timer,SIGNAL(timeout()),this,SLOT(move()));
-    timer->start(100);
+     timer->start(100);
+  //   timer->start(40);
 }
 
 
 void Red::move()
 {
  //move the enemy down
-    setPos(x()-20,y());
+     setPos(x()-20,y());
+    //   setPos(x()-8,y());
 
     if(pos().x() + 70 < 0){
         scene()->removeItem(this);

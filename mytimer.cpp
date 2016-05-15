@@ -28,10 +28,12 @@ void Mytimer::decrease()
 {
     if(time == 0){
          grade = game->myscore->getScore();
+         MainWindow2 * w2 = new MainWindow2();
          game->close();
          game->bgm->stop();
-         //delete game;
-         MainWindow2 * w2 = new MainWindow2();
+         delete game->player;
+         delete game;
+         //MainWindow2 * w2 = new MainWindow2();
          //delete game;
          w2->setFixedSize(768,557);
          w2->show();

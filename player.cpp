@@ -104,7 +104,7 @@ void Player::spawn()
         game->timer->start(rand_num*200+660);
     }
 
-    if (random_num == 1){
+    if (random_num == 1 ){
         int rand_num = rand()%3;
         Red * red = new Red();
         scene()->addItem(red);
