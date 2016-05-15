@@ -6,6 +6,7 @@
         <file>Don2.png</file>
         <file>Katsu2.png</file>
         <file>bgg8.png</file>
+        <file>finalbg.jpg</file>
     </qresource>
     <qresource prefix="/sound">
         <file>bgm.mp3</file>
